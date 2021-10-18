@@ -1,0 +1,32 @@
+{
+    "manifest_version" : 2,
+    "name" : "demo extension",
+    "description" : "Exploring extension functionalities",
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+
+    "browser_action" : {
+        "default_popup" : "popup.html"
+    },
+    "icons" : {
+      "64" : "myicon.png",
+      "16" : "myicon.png"
+    },
+    "version" : "1.0",
+    "permissions" : [
+        "contextMenus",
+        "notifications",
+        "storage",
+        "tabs",
+        "alarms",
+        "tts"
+    ]
+  
+}
