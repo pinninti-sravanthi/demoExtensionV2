@@ -1,7 +1,10 @@
 {
-    "manifest_version" : 2,
-    "name" : "demo extension",
+    "name" : "Demo Extension",
+    "version" : "1.0",
     "description" : "Exploring extension functionalities",
+
+    "manifest_version" : 2,
+    
     "background" : {
         "scripts" : ["background.js"],
         "persistent": false
@@ -15,11 +18,12 @@
     "browser_action" : {
         "default_popup" : "popup.html"
     },
+    
     "icons" : {
       "64" : "myicon.png",
       "16" : "myicon.png"
     },
-    "version" : "1.0",
+   
     "permissions" : [
         "contextMenus",
         "notifications",

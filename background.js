@@ -20,9 +20,11 @@ function getSelectedPhrase(info,tab){
 
 
 
-const ALARM_KEY = "alarm";
 
 // alarm notification
+
+const ALARM_KEY = "alarm";
+
 function createNotification (key){
 
     chrome.storage.sync.get([key],function(data){
