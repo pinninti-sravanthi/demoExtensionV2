@@ -1,6 +1,6 @@
 
 //tts with contextMenus
-const CONTEXT_MENU_ID = "ttsConverter";
+const CONTEXT_MENU_ID = "ttsConverter-selection";
 
 chrome.contextMenus.create({
     id: CONTEXT_MENU_ID,
@@ -51,6 +51,7 @@ function openNewTab(){
     });
 }
 
+//alarm event fire receiver
 chrome.alarms.onAlarm.addListener(function(alarm) {
     createNotification(ALARM_KEY);
 });
